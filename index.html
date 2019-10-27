@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Muvibon [WIP] by Arsfiqball
+  </title>
+  <style type="text/css">
+    .is-hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>Muvibon [WIP]</h3>
+    <p>Simple online service for video overlay ribbon</p>
+  </div>
+  <div>
+    <label>
+      Select template file (PNG only)<br>
+      <input type="file" id="template" accept="image/png" />
+    </label>
+    <br>
+    <button id="start">START</button>
+  </div>
+  <div id="screen" class="is-hidden">
+    <video id="video" class="is-hidden"></video>
+    <canvas id="canvas"></canvas>
+    <br>
+    <button id="close">CLOSE</button>
+    <button id="record">RECORD</button>
+    <button id="done" class="is-hidden">DONE</button>
+  </div>
+  <div id="player" class="is-hidden">
+    <video id="preview"></video>
+    <br>
+    <button id="clear">CLEAR</button>
+    <a id="download" class="is-hidden">Download</a>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
